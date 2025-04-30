@@ -1,0 +1,98 @@
+/* Admin Panel Styles */
+:root {
+    --admin-primary: #dc3545;
+    --admin-primary-hover: #c82333;
+    --admin-secondary: #6c757d;
+    --admin-success: #28a745;
+    --admin-info: #17a2b8;
+    --admin-warning: #ffc107;
+    --admin-danger: #dc3545;
+    --admin-light: #f8f9fa;
+    --admin-dark: #343a40;
+  }
+  
+  /* Admin Header */
+  .admin-header {
+    background-color: var(--admin-primary);
+    color: white;
+  }
+  
+  /* Admin Sidebar */
+  .admin-sidebar .nav-link.active {
+    background-color: rgba(220, 53, 69, 0.2);
+    border-left: 4px solid var(--admin-primary);
+  }
+  
+  .admin-sidebar .nav-link:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+  }
+  
+  /* Admin Cards */
+  .admin-card {
+    border-top: 3px solid var(--admin-primary);
+  }
+  
+  /* Admin Buttons */
+  .btn-admin {
+    background-color: var(--admin-primary);
+    border-color: var(--admin-primary);
+    color: white;
+  }
+  
+  .btn-admin:hover,
+  .btn-admin:focus {
+    background-color: var(--admin-primary-hover);
+    border-color: var(--admin-primary-hover);
+    color: white;
+  }
+  
+  /* Admin Tables */
+  .admin-table th {
+    background-color: rgba(220, 53, 69, 0.1);
+  }
+  
+  .admin-table .table-hover tbody tr:hover {
+    background-color: rgba(220, 53, 69, 0.05);
+  }
+  
+  /* Admin Forms */
+  .admin-form .form-control:focus,
+  .admin-form .form-select:focus {
+    border-color: var(--admin-primary);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  }
+  
+  .admin-form .form-check-input:checked {
+    background-color: var(--admin-primary);
+    border-color: var(--admin-primary);
+  }
+  
+  /* Admin Stats */
+  .stat-card {
+    transition: transform 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Admin Login */
+  .admin-login-card {
+    border-top: 4px solid var(--admin-primary);
+  }
+  
+  .admin-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--admin-primary);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
